@@ -15,7 +15,7 @@ java -version
 curl -OL http://apache.mirror.digitalpacific.com.au/cassandra/4.0.0/apache-cassandra-4.1.4-bin.tar.gz
 tar xzvf apache-cassandra-4.0.0-bin.tar.gz
 ```
-Follow [Key space YCSB Cassandra] (https://github.com/brianfrankcooper/YCSB/tree/master/cassandra) on how to setup ycsb keyspace.
+Follow (https://github.com/brianfrankcooper/YCSB/tree/master/cassandra) on how to setup ycsb keyspace.
 
 ## Steps to launch 1,3,5,7 Cassandra nodes in a single cluster on a VM
 
