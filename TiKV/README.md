@@ -25,15 +25,20 @@ This should create 3 instances of TiKV in a single local cluster and start runni
 
 The below commands will first install the ycsb repo consisting of workloads which would be tested on TiKV. And this first needs to install go as a pre requisite.
 > sudo apt update
+
 > sudo apt install golang-go
+
 > git clone https://github.com/pingcap/go-ycsb.git --depth 1
+
 > cd go-ycsb/
+
 > make
 
 This will make the setup done for YCSB and we can start running the workloads on TiKV. Before that, we are currently making comparison for zipfian distribution, so for each workload in `workloads/` folder we need to change the distribution from uniform to zipfian.
 
 Finally, the below commands will first load the workload with given parameters for configuring he workload and then run the workload. The result after running the workload will be printed in terminal and gives us the measurement of throughput for Reads/Writes/Inserts/Updates/Total etc.
 > bin/go-ycsb load tikv -P workloads/workloads -p operationcount=100000 -p recordcount=100000 -p threadcount=4 
+
 > bin/go-ycsb run tikv -P workloads/workloads -p operationcount=100000 -p recordcount=100000 -p threadcount=4 
 
 ## Analysis
