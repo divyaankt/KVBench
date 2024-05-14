@@ -83,6 +83,7 @@ UN  127.0.0.1  109.43 KiB  16      100.0%            4c454c18-599f-4065-b42c-937
 
 ## Running workloads
 
+Here is how to load and run a sample workload A
 ```
 bin/ycsb.sh load basic -P workloads/workloada -threads 4 -p operationcount=100000 -p recordcount=100000
 bin/ycsb.sh run basic -P workloads/workloada -threads 4 -p operationcount=100000 -p recordcount=100000
