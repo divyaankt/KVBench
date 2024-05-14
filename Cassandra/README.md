@@ -76,7 +76,7 @@ DN  127.0.0.2  136.77 KiB  16      100.0%            af8e43d3-90c4-4220-b0fb-699
 UN  127.0.0.1  109.43 KiB  16      100.0%            4c454c18-599f-4065-b42c-937182510cbf  rack1
 ```
 
--- Alternatively use can add the following line to the end of cassandra-env.sh file
+  -- Alternatively use can add the following line to the end of cassandra-env.sh file
   ```JVM_OPTS="$JVM_OPTS -Dcassandra.replace_address=<dead_node_ip>"```
 
   
