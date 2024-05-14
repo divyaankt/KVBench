@@ -79,4 +79,9 @@ UN  127.0.0.1  109.43 KiB  16      100.0%            4c454c18-599f-4065-b42c-937
 - Alternatively use can add the following line to the end of cassandra-env.sh file to free the dead node IPs
       ```JVM_OPTS="$JVM_OPTS -Dcassandra.replace_address=<dead_node_ip>"```
 
-  
+## Running workloads
+
+```
+bin/ycsb.sh load basic -P workloads/workloada -threads 4 -p operationcount=100000 -p recordcount=100000
+bin/ycsb.sh run basic -P workloads/workloada -threads 4 -p operationcount=100000 -p recordcount=100000
+```
