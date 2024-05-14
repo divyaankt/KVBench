@@ -29,7 +29,7 @@ bin/cassandra -f -Dcassandra.config=file:///${PWD}/conf/cassandra1.yaml
 
 ### 3 nodes cluster
 
-Execute the following commands on seperate shell processes
+Execute the following commands on separate shell processes
 ```
 bin/cassandra -f -Dcassandra.config=file:///${PWD}/conf/cassandra1.yaml
 bin/cassandra -f -Dcassandra.config=file:///${PWD}/conf/cassandra2.yaml
@@ -38,7 +38,7 @@ bin/cassandra -f -Dcassandra.config=file:///${PWD}/conf/cassandra3.yaml
 
 ### 7 nodes cluster
 
-Execute the following commands on seperate shell processes
+Execute the following commands on separate shell processes
 ```
 bin/cassandra -f -Dcassandra.config=file:///${PWD}/conf/cassandra1.yaml
 bin/cassandra -f -Dcassandra.config=file:///${PWD}/conf/cassandra2.yaml
@@ -51,7 +51,7 @@ bin/cassandra -f -Dcassandra.config=file:///${PWD}/conf/cassandra7.yaml
 ## FAQ for launching these instances
 
 - Set the MAX_HEAP_SIZE and HEAP_NEW_SIZE to 16G and 3200M respectively in cassandra-env.sh to have sufficient number of nodes run in a JVM environment. Default values are 4G, 800M. We faced nodes exiting because of memory constraint with default values.
-- Keep these different yaml files in seperate apache working directories because we also make minor edits to cassandra-env.sh file in ecah working directory
+- Keep these different yaml files in separate apache working directories because we also make minor edits to cassandra-env.sh file in each working directory
 - i.e set JMX_PORT variable in each cassandra-env.sh file to a different port
 - Main variales which are configured differently in these config files
 
