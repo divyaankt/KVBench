@@ -19,13 +19,13 @@ tar xzvf apache-cassandra-4.0.0-bin.tar.gz
 
 You can find the respective config files in the config directory
 
-### 1 node
+### 1 node cluster 
 
 ```
 bin/cassandra -f -Dcassandra.config=file:///${PWD}/conf/cassandra1.yaml
 ```
 
-### 3 nodes
+### 3 nodes cluster
 
 Execute the following commands on seperate shell processes
 ```
@@ -34,7 +34,7 @@ bin/cassandra -f -Dcassandra.config=file:///${PWD}/conf/cassandra2.yaml
 bin/cassandra -f -Dcassandra.config=file:///${PWD}/conf/cassandra3.yaml
 ```
 
-### 7 nodes
+### 7 nodes cluster
 
 Execute the following commands on seperate shell processes
 ```
