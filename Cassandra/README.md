@@ -68,6 +68,7 @@ bin/cassandra -f -Dcassandra.config=file:///${PWD}/conf/cassandra7.yaml
 
 - nodetool status will give hashid and status of the node (UP/DOWN) to be used in the above command
 ```
+bin/nodetool status
 Status=Up/Down
 |/ State=Normal/Leaving/Joining/Moving
 --  Address    Load        Tokens  Owns (effective)  Host ID                               Rack
@@ -76,6 +77,6 @@ UN  127.0.0.1  109.43 KiB  16      100.0%            4c454c18-599f-4065-b42c-937
 ```
 
 -- Alternatively use can add the following line to the end of cassandra-env.sh file
-  '''JVM_OPTS="$JVM_OPTS -Dcassandra.replace_address=<dead_node_ip>"```
+  ```JVM_OPTS="$JVM_OPTS -Dcassandra.replace_address=<dead_node_ip>"```
 
   
