@@ -8,7 +8,9 @@ This folder contains the following details about the TikV key value store distri
 ## Installing TiKV
 The below three commands will install the TiKV system into the machine.
 > curl --proto '=https' --tlsv1.2 -sSf https://tiup-mirrors.pingcap.com/install.sh | sh
+
 > source ~/.bashrc
+
 > tiup playground
 
 If successfully installed, the above `tiup playground` should give start running a single TiKV instance.
