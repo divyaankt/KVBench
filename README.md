@@ -21,7 +21,10 @@ On CloudLab, we chose the following configuration for our server
 
 (Note: For all KV stores evaluated, we spun up multi-node clusters on a single server itself.)
 
-## Benchmarks
+## YCSB Parameters
+We have chosen the YCSB workload parameters to be the default ones: `operationcount = 100000` ,  `recordcount = 100000` and `threadcount = 4` to make comparison across the systems.
+
+## Benchmark Setup and Results
 To learn more about how to go ahead and perform the benchmarking results, checkout the links for the respective Key-Value stores. For a more detailed comparison and in-depth interpretation of the benchmarks, have a look at our attached Project report.
 
 1. [Apache Ignite](https://github.com/divyaankt/KVBench/blob/main/Ignite/README.md)
