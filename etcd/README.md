@@ -94,6 +94,3 @@ bin/go-ycsb load etcd -P workloads/workloada -p operationcount=100000 -p recordc
 ```
 bin/go-ycsb run etcd -P workloads/workloada -p operationcount=100000 -p recordcount=100000 -p threadcount=4 -p etcd.endpoints=http://localhost:2379,http://localhost:2378,http://localhost:2377 
 ```
-## Analysis
-We have fixed the parameters `operationcount = 100000` ,  `recordcount = 100000` and `threadcount = 4` to make comparison across the systems.
-The throughputs of each workload in YCSB is tested over etcd cluster having varying number of instances 1, 3, 5, 7.
