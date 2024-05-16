@@ -57,6 +57,3 @@ bin/go-ycsb load tikv -P workloads/workloads -p operationcount=100000 -p recordc
 ```
 bin/go-ycsb run tikv -P workloads/workloads -p operationcount=100000 -p recordcount=100000 -p threadcount=4 
 ```
-## Analysis
-We have fixed the parameters `operationcount = 100000` ,  `recordcount = 100000` and `threadcount = 4` to make comparison across the systems.
-The throughputs of each workload in YCSB is tested over TikV cluster having varying number of instances 1, 3, 5, 7.
